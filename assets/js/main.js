@@ -305,7 +305,9 @@ function bindFilter() {
     chips.forEach(c => c.classList.toggle('is-active', c === chip));
     const f = chip.dataset.filter;
     $$('.catalogue .product-card').forEach(card => {
-      card.hidden = f !== 'all' && !card.dataset.tags.includes(f);
+      card.hidden = f !== 'all' && !card.dataset.tags.split(' ').includes(f);
+      card.classList.remove('filter-in');
+      if (!card.hidden) { void card.offsetWidth; card.classList.add('filter-in'); }
     });
   }));
 }
