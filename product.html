@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product | BAMBYTE</title>
+  <meta name="description" content="A BAMBYTE bamboo electronics product.">
+  <meta name="theme-color" content="#F5F1E8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="products">
+<main id="main">
+  <div id="product-root">
+
+    <section class="section section--tight">
+      <div class="wrap">
+        <a class="link-arrow" href="products.html" style="border:0;margin-bottom:24px">← All products</a>
+        <div class="buy">
+          <div class="buy__media"><img id="p-img" src="" alt=""></div>
+          <div class="buy__body">
+            <span class="badge badge--green">New</span>
+            <div class="product-card__type" style="margin-top:20px" data-p="type"></div>
+            <h1 style="font-size:clamp(2.2rem,4.6vw,3.8rem);margin-bottom:12px" data-p="name"></h1>
+            <p class="lead" data-p="long"></p>
+            <ul class="check-list" id="p-points"></ul>
+            <div class="price"><span id="p-price"></span><small>incl. SST</small></div>
+            <div class="status" data-p="status"></div>
+            <div class="buy-actions">
+              <button class="btn btn--primary" id="p-add" data-add="">Add to Cart</button>
+            </div>
+            <ul class="check-list" style="margin:0"><li>Free delivery in Peninsular Malaysia</li><li>1-year limited warranty</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="wrap">
+        <div class="head-row"><h2 class="mb-0" style="font-size:clamp(1.8rem,3.2vw,2.6rem)">More from BAMBYTE</h2></div>
+        <div class="catalogue" id="p-others"></div>
+      </div>
+    </section>
+
+  </div>
+</main>
+<script src="assets/js/i18n-ms.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
